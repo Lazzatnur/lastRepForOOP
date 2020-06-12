@@ -1,6 +1,5 @@
 package launch;
 
-import java.awt.FontFormatException;
 import java.io.IOException;
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -44,7 +43,7 @@ con.close();
 		try {
 			Table g = new Table();
 			g.create();
-		} catch (FontFormatException | IOException e) {
+		} catch (IOException e) {
 			System.out.println("ERROR");
 			e.printStackTrace(); 
 		}
