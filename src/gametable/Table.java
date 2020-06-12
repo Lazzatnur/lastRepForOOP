@@ -1,7 +1,6 @@
 package gametable;
 
 import java.awt.Font;
-import java.awt.FontFormatException;
 import java.io.IOException;
 
 import javax.swing.JFrame;
@@ -16,7 +15,7 @@ public class Table {
 	
 	public static Font pixelfont;
 		
-	public void create() throws FontFormatException, IOException {
+	public void create() throws IOException {
 
 		jf = new JFrame("Tetris");
 		jf.setSize(width+ 16, height + 39); 
